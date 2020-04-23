@@ -47,7 +47,7 @@ secure, durable and low-cost storage class for data archiving.  Retrieval times 
 6. **S3 Glacier Deep Archive**
 Lowest cost storage class where a retrieval time of 12 hours is acceptable
 
-![alt-txt](./iimages./s3-comparison.png)
+![image](./images./s3-comparison.png)
 
 ### External Resources
 [S3 FAQs](https://aws.amazon.com/s3/faqs/)
