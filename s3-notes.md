@@ -71,5 +71,12 @@ Lowest cost storage class where a retrieval time of 12 hours is acceptable
 ##### Encryption at Rest (Client Side)
 - Encrypted locally before transfer to S3
 
+### Versioning
+- stores all version of an object (including all writes and even if you delete an object)
+- great backup tool
+- once enables, versioning cannot be disabled, only suspended
+- integrates with lifecycle rules
+- versioning's MFS Delete capability, which uses multi-factor authentication, can be used to provide an additional layer of security
+
 ### External Resources
 [S3 FAQs](https://aws.amazon.com/s3/faqs/)
