@@ -26,3 +26,6 @@ Tool to manage users, groups, policies, and roles and their access levels
 - **Groups** - A collection of usrs -- each user in the group will inherit the permissions of the group
 - **Policies** - Policies are made up of documents called Policy documents.  These documents are in JSON and give permissions to what a User/Group/Role is able to do
 - **Roles** - You create roles and then assign them to AWS Resources
+
+### Additional Resources
+[IAM FAQs](https://aws.amazon.com/iam/faqs/)
