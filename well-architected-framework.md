@@ -16,7 +16,7 @@ five pillars
 
 `milestone`: key changes in architecture (design, go-live, etc)
 
-`technolog`y portfolio: collection of workloads that make up business operations
+`technology portfolio`: collection of workloads that make up business operations
 
 
 NTS: What is the TOGAF or Zachman framework?
