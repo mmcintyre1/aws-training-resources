@@ -66,6 +66,20 @@ you can select ami on
     - create an ami from the encrypted snapshot
     - use that ami to launch a new encrypted instance
 
+### ec2 placement groups
+1. clustered placement groups
+     - a grouping of instances within single AZ -- recommended for low network latency and high throughput.   only certain instances can be launched into clustered.
+    - low latency high network throughput
+
+2. spread placement groups
+    - each placed on distinct underlying hardware.  recommended for applications that have a small number of critical instances that should be kept separate from each other. 
+    - individual critical ec2 instances
+
+3. partitioned placement groups
+    - similar to spread, but instances grouped into partitions but separated via different hardware
+    - multiple ec2 instances
+
+
 ### some more bits
 - roles are more secure than storing your access key and secret access key on individual ec2 instances
 - roles are easier to manage
