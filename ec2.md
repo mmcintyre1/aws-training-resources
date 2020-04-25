@@ -54,3 +54,21 @@ you can select ami on
 - can't add additional stores later
 - can't stop instance-backed volume ec2, so stopping will eliminate all data (ephemeral)
 
+### encryption
+ - snapshots of encrypted volumes are encrypted automatically
+ - volumes restored from encrypted snapshots are encrypted automatically
+ - you can share snapshots, but only if they are unencrypted
+ - these snapshots can be shared with other AWS accounts or made public
+ - you can encrypt root device volumes upon creation of the EC2 instnace
+ - if you want to encrpyt an unencrypted root volume
+    - create a snapshot of the root device volume
+    - create a copy of the snapshot and select the encrypt option
+    - create an ami from the encrypted snapshot
+    - use that ami to launch a new encrypted instance
+
+### some more bits
+- roles are more secure than storing your access key and secret access key on individual ec2 instances
+- roles are easier to manage
+- roles can be assigned to an ec2 instance after it is created using both the console and the command line
+- roles are universal -- you can use them in any region
+
