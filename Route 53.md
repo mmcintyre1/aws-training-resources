@@ -46,16 +46,23 @@
     - you can only have one record with multiple IP addresses
     - if you specify multiple values in a record, route 53 returns all values to the user in a random order
 - `weighted routing`
-    - allows you to split your traffic based on different weight 
-- latency-based routing
-- failover routing
-- geolocation routing
-- geoproximity routing (traffic flow only)
-- multivalue answer routing
+    - allows you to split your traffic based on different weight values
+- `latency-based routing`
+    - allows you to route your trafic based on the lowest  network latency for end user
+- `failover routing`
+    - used when you want to create an active/passive set up, so if the active endpoint fails you will be directed to the passive endpoint
+- `geolocation routing`
+    - allows you to choose where traffic will be sent based on geographic location of your user (where the DNS queries originates)
+- `geoproximity routing (traffic flow only)`
+    - allows you to route traffic based on geographic location, but you can optionally specify a bias to prefer a particular instance over another
+    - you must create a traffic policy first
+- `multivalue answer routing`
+    - same as simple routing, but allows you set multiple DNS records to check the set health checks for each resource
 
 ### other bits
 - you can buy domain names from AWS
 - and it might take 3 days register depending on circumstances
+- health checks -- you can set health checks on individual record sets, and you can set up SNS notifications if a health check fails
 
 ### other resources
 [Route 53 FAQs](https://aws.amazon.com/route53/faqs/)
