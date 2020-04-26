@@ -41,4 +41,21 @@
 - a CName can't be used for naked domain names (zone apex record)
 - if there is a choice between A record and CNAME, choose A record
 
+### routing policies
+- `simple routing`
+    - you can only have one record with multiple IP addresses
+    - if you specify multiple values in a record, route 53 returns all values to the user in a random order
+- `weighted routing`
+    - allows you to split your traffic based on different weight 
+- latency-based routing
+- failover routing
+- geolocation routing
+- geoproximity routing (traffic flow only)
+- multivalue answer routing
 
+### other bits
+- you can buy domain names from AWS
+- and it might take 3 days register depending on circumstances
+
+### other resources
+[Route 53 FAQs](https://aws.amazon.com/route53/faqs/)
