@@ -34,5 +34,8 @@ cloudtrail increases the visibility into your user and resource activity by reco
 - you can create cloudwatch alarms which trigger notifications
 - cloudwatch is all about performance.  cloudtrail is about auditing
 
+### other resources
+[CloudWatch FAQs](https://aws.amazon.com/cloudwatch/faqs/)
+
 
 
