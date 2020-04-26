@@ -26,3 +26,6 @@ amazon elastic block store provides persistent block storage volumes for use wit
 - snapshots are point in time copies of volumes
 - snapshots are incremental - only blocks that have changed since you last snapshots are moved to S3
 - to create a snapshot for EBS volume that is root, best practice to stop the instance before taking the snapshot
+
+### other resources
+[EBS FAQs](https://aws.amazon.com/ebs/faqs/)
