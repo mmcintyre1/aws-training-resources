@@ -28,7 +28,7 @@
     - the default number of second the the time-to-live file on resource records
 - NS record (Name Server) used to top level domain servers to direct traffic to the Content DNS server which contains the authoritative DNS records
 
-![image](https://github.com/mmcintyre1/aws-training-resources/tree/master/images/dns-flow.png)
+![image](https://github.com/mmcintyre1/aws-training-resources/tree/master/images/dns-flow.PNG)
 
 ### TTL
 - the length that a DNS record is cached on either the Resolving Server or the users own local PC is equal to the value of the time-to-live in seconds. The lower the TTL, the faster changes to DNS records take to propagate throughout the internet.
